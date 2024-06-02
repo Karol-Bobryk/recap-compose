@@ -21,7 +21,7 @@ services:
     volumes:
       - .:/usr/app/
     ports:
-      - "3000:3000"
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
     depends_on:
       - database
     networks:
